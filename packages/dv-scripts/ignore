@@ -1,0 +1,8 @@
+# We point at this file when linting.
+# It is used by ESLint and Prettier.
+node_modules/
+coverage/
+dist/
+build/
+out/
+.next/

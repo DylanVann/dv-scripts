@@ -1,0 +1,25 @@
+{
+  "name": "dv-scripts-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "lint": "lerna run lint",
+    "test": "cross-env CI=true lerna run test"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "lerna": "^3.21.0",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.3"
+  }
+}

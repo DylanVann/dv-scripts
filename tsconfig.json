@@ -1,0 +1,4 @@
+{
+  "files": [],
+  "references": [{ "path": "./packages/dv-scripts/tsconfig.json" }]
+}
