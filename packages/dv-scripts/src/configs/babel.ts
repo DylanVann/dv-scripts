@@ -5,7 +5,7 @@ const config = {
     [
       require.resolve('@babel/preset-env'),
       {
-        targets: { node: 'current' },
+        targets: { node: 'v12.16.3' },
         modules: useESModules ? false : 'commonjs',
       },
     ],
