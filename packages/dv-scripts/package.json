@@ -1,6 +1,6 @@
 {
   "name": "dv-scripts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Scripts for Node/TypeScript development.",
   "license": "MIT",
   "bin": {
