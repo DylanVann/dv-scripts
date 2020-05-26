@@ -16,7 +16,7 @@ module.exports = {
           delimiter: 'none',
         },
         singleline: {
-          delimiter: 'comma',
+          delimiter: 'semi',
         },
       },
     ],
