@@ -70,7 +70,7 @@ export const lint = async () => {
   try {
     const inputGlob = `**/*.{${extensions.join(',')}}`
     const fixArgs = fix ? ['--write'] : ['--check']
-    const config = ['--config', require.resolve('../configs/prettier')]
+    const config = ['--config', require.resolve('../configs/prettier.js')]
     await execa('prettier', [...ignoreArgs, inputGlob, ...config, ...fixArgs], {
       preferLocal: true,
       stdio: 'inherit',

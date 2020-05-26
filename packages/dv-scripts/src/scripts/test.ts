@@ -1,5 +1,5 @@
 import isCI from 'is-ci'
-import { config as jestConfig } from '../configs/jest'
+import jestConfig = require('../configs/jest')
 
 const args = process.argv.slice(2)
 

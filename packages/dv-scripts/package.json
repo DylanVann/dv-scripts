@@ -7,6 +7,7 @@
     "dv-scripts": "./bin.js"
   },
   "files": [
+    "bin.js",
     "dist",
     "ignore",
     "!dist/**/*.d.ts.map"

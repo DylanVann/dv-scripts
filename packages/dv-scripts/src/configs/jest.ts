@@ -13,7 +13,7 @@ const ignores = [
   '__mocks__',
 ]
 
-export const config = {
+const config = {
   roots: [path.join(root, 'src')],
   testEnvironment: 'jsdom',
   moduleFileExtensions: extensions,
@@ -28,3 +28,6 @@ export const config = {
     '^.+\\.[jt]sx?$': require.resolve('./jestBabelTransform.js'),
   },
 }
+
+module.exports = config
+export {}

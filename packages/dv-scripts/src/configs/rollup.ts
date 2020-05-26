@@ -5,9 +5,9 @@ import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 // @ts-ignore
 import babel from '@rollup/plugin-babel'
-import babelConfig from './babel'
 import pkgDir from 'pkg-dir'
 import { extensions, extensionsWithDot } from '../extensions'
+import babelConfig = require('./babel')
 
 const root = pkgDir.sync()
 

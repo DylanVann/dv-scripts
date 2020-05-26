@@ -1,6 +1,6 @@
 const useESModules = process.env.NODE_ENV !== 'test'
 
-export default {
+const config = {
   presets: [
     [
       require.resolve('@babel/preset-env'),
@@ -24,3 +24,6 @@ export default {
     ],
   ],
 }
+
+module.exports = config
+export {}

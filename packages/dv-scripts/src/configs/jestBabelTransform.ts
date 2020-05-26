@@ -1,4 +1,5 @@
 import babelJest from 'babel-jest'
-import config from './babel'
+import config = require('./babel')
 
 module.exports = babelJest.createTransformer(config)
+export {}
