@@ -1,4 +1,13 @@
 import yargs from 'yargs'
+import { build } from './scripts/build'
+import { start } from './scripts/start'
+import { lint } from './scripts/lint'
+import { test } from './scripts/test'
+
+export const getArgs = (options: any) => {
+  const command = options._[0]
+  return process.argv.slice(process.argv.findIndex((v) => v === command) + 1)
+}
 
 yargs
   .command(
@@ -6,8 +15,7 @@ yargs
     'Build a package using Rollup.',
     (v) => v,
     async (options) => {
-      const { build } = await import('./scripts/build.js')
-      await build()
+      await build(getArgs(options))
     },
   )
   .command(
@@ -15,8 +23,7 @@ yargs
     'Start a package using Babel.',
     (v) => v,
     async (options) => {
-      const { start } = await import('./scripts/start.js')
-      await start()
+      await start(getArgs(options))
     },
   )
   .command(
@@ -24,8 +31,7 @@ yargs
     'Lint a package using ESLint.',
     (v) => v,
     async (options) => {
-      const { lint } = await import('./scripts/lint.js')
-      await lint()
+      await lint(getArgs(options))
     },
   )
   .command(
@@ -33,8 +39,7 @@ yargs
     'Test a package using Jest.',
     (v) => v,
     async (options) => {
-      const { test } = await import('./scripts/test.js')
-      await test()
+      await test(getArgs(options))
     },
   )
   .demandCommand(1, '')

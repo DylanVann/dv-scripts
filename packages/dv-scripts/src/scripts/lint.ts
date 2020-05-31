@@ -3,34 +3,32 @@ import { extensions } from '../extensions'
 import pkgDir from 'pkg-dir'
 import path from 'path'
 
-const root = pkgDir.sync() as string
+export const lint = async (args: string[]) => {
+  const root = pkgDir.sync() as string
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const pkg = require(path.join(root, 'package.json'))
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const pkg = require(path.join(root, 'package.json'))
 
-const args = process.argv.slice(3)
+  const fix = args.includes('--fix')
 
-const fix = args.includes('--fix')
+  const sortPackageJson = async (fix: boolean) => {
+    const args = fix ? [] : ['--check']
+    await execa('sort-package-json', args, {
+      stdio: 'inherit',
+      preferLocal: true,
+    })
+  }
 
-const sortPackageJson = async (fix: boolean) => {
-  const args = fix ? [] : ['--check']
-  await execa('sort-package-json', args, {
-    stdio: 'inherit',
-    preferLocal: true,
-  })
-}
+  const useBuiltinIgnore = !args.includes('--ignore-path')
 
-const useBuiltinIgnore = !args.includes('--ignore-path')
+  const lintFilesArgs = ['src']
 
-const lintFilesArgs = ['src']
+  const extensionArgs = extensions.flatMap((e) => ['--ext', e])
 
-const extensionArgs = extensions.flatMap((e) => ['--ext', e])
+  const configArgs = pkg.eslintConfig
+    ? []
+    : ['--config', require.resolve('eslint-config-dv-scripts')]
 
-const configArgs = pkg.eslintConfig
-  ? []
-  : ['--config', require.resolve('eslint-config-dv-scripts')]
-
-export const lint = async () => {
   // sort-package-json
   try {
     await sortPackageJson(fix)
@@ -68,7 +66,7 @@ export const lint = async () => {
 
   // Prettier
   try {
-    const inputGlob = `**/*.{${extensions.join(',')}}`
+    const inputGlob = `src/**/*.{${extensions.join(',')}}`
     const fixArgs = fix ? ['--write'] : ['--check']
     const config = ['--config', require.resolve('../configs/prettier.js')]
     await execa('prettier', [...ignoreArgs, inputGlob, ...config, ...fixArgs], {

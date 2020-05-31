@@ -1,7 +1,7 @@
 import execa from 'execa'
 import { extensionsWithDot } from '../extensions'
 
-export const start = async () => {
+export const start = async (args: string[]) => {
   execa(
     'babel',
     [
