@@ -14,9 +14,9 @@
   ],
   "scripts": {
     "build": "tsc --build",
-    "lint": "./bin.js lint",
+    "lint": "node bin.js lint",
     "start": "tsc --build --watch",
-    "test": "./bin.js test"
+    "test": "node bin.js test"
   },
   "eslintConfig": {
     "extends": "dv-scripts"
