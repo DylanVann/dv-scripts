@@ -9,6 +9,7 @@
   "scripts": {
     "build": "lerna run build",
     "lint": "lerna run lint",
+    "start": "lerna run start --parallel",
     "test": "cross-env CI=true lerna run test"
   },
   "prettier": {
