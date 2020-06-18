@@ -2,6 +2,11 @@
   "name": "dv-scripts",
   "version": "1.0.7",
   "description": "Scripts for Node/TypeScript development.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dylanvann/dv-scripts.git",
+    "directory": "packages/dv-scripts"
+  },
   "license": "MIT",
   "bin": {
     "dv-scripts": "./bin.js"

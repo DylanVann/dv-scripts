@@ -2,9 +2,16 @@
   "name": "eslint-config-dv-scripts",
   "version": "1.0.3",
   "description": "ESLint config for dv-scripts.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dylanvann/dv-scripts.git",
+    "directory": "packages/eslint-config-dv-scripts"
+  },
   "license": "MIT",
   "main": "index.js",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "build": "echo eslint-config-dv-scripts does not have a build step.",
     "start": "echo eslint-config-dv-scripts does not have a start step."
