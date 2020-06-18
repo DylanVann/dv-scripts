@@ -41,7 +41,7 @@ if (pkg.module && pkg.module !== 'dist/index.js') {
   )
 }
 
-export const config: RollupOptions = {
+const config: RollupOptions = {
   input: inputFilePathRelative,
   output: [
     pkg.main && {
@@ -67,3 +67,4 @@ export const config: RollupOptions = {
 }
 
 module.exports = config
+export {}
