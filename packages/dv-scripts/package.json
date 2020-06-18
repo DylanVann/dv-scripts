@@ -14,8 +14,8 @@
   ],
   "scripts": {
     "build": "yarn run build:typescript && yarn run build:copy-readme",
-    "build:typescript": "tsc --build",
     "build:copy-readme": "cp ../../README.md ./",
+    "build:typescript": "tsc --build",
     "lint": "node bin.js lint",
     "start": "tsc --build --watch",
     "test": "node bin.js test"
