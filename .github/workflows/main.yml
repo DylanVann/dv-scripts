@@ -3,7 +3,6 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Begin CI...
         uses: actions/checkout@v2
@@ -12,14 +11,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14'
-
-      - name: Use cached node_modules
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: nodeModules-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            nodeModules-
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
