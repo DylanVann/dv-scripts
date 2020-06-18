@@ -3,6 +3,7 @@ import { build } from './scripts/build'
 import { start } from './scripts/start'
 import { lint } from './scripts/lint'
 import { test } from './scripts/test'
+import { release } from './scripts/release'
 
 export const getArgs = (options: any) => {
   const command = options._[0]
@@ -40,6 +41,19 @@ yargs
     (v) => v,
     async (options) => {
       await test(getArgs(options))
+    },
+  )
+  .command(
+    'release',
+    'Release a package, or packages if we are in a monorepo using Yarn workspaces.',
+    (v) => v,
+    async (options) => {
+      const { GITHUB_TOKEN, NPM_TOKEN } = process.env
+      await release({
+        args: getArgs(options),
+        gitHubToken: GITHUB_TOKEN,
+        npmToken: NPM_TOKEN,
+      })
     },
   )
   .demandCommand(1, '')
