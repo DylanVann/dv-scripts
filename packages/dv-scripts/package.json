@@ -13,7 +13,9 @@
     "!dist/**/*.d.ts.map"
   ],
   "scripts": {
-    "build": "tsc --build",
+    "build": "yarn run build:typescript && yarn run build:copy-readme",
+    "build:typescript": "tsc --build",
+    "build:copy-readme": "cp ../../README.md ./",
     "lint": "node bin.js lint",
     "start": "tsc --build --watch",
     "test": "node bin.js test"

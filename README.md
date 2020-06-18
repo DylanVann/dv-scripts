@@ -1,5 +1,7 @@
 # dv-scripts
 
+![npm](https://img.shields.io/npm/v/dv-scripts)
+
 Scripts for Node/TypeScript development.
 
 - `build`
