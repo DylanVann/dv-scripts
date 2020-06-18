@@ -30,7 +30,7 @@ export const release = async ({
 
   const extendsArgs = [
     '--extends',
-    require.resolve('./configs/semanticRelease.js'),
+    require.resolve('../configs/semanticRelease.js'),
   ]
 
   if (isInWorkspace) {
