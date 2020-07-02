@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dv-scripts",
-  "version": "1.0.3",
+  "version": "1.0.8",
   "description": "ESLint config for dv-scripts.",
   "repository": {
     "type": "git",
@@ -13,8 +13,10 @@
     "index.js"
   ],
   "scripts": {
-    "build": "echo eslint-config-dv-scripts does not have a build step.",
-    "start": "echo eslint-config-dv-scripts does not have a start step."
+    "build": "echo no build",
+    "lint": "echo no lint",
+    "start": "echo no start",
+    "test": "echo no test"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "2.x",

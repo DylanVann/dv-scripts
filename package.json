@@ -7,10 +7,10 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna run build",
-    "lint": "lerna run lint",
-    "start": "lerna run start --parallel",
-    "test": "cross-env CI=true lerna run test"
+    "build": "wsrun --stages build",
+    "lint": "wsrun lint",
+    "start": "wsrun start",
+    "test": "cross-env CI=true wsrun test"
   },
   "prettier": {
     "semi": false,
@@ -19,8 +19,8 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
-    "lerna": "^3.22.1",
     "prettier": "^2.0.5",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.6",
+    "wsrun": "^5.2.1"
   }
 }
