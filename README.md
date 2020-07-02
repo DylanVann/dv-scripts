@@ -15,7 +15,7 @@ Scripts for Node/TypeScript development.
 - `start`
   - Compile individual files in watch mode using Babel.
   - We do this so that when developing in a monorepo you get proper hot module reloading.
-- `publish`
-  - Publish a canary release if we aren't on the `master` branch.
-  - Publish a release based on conventional commits.
+- `release`
+  - Release a canary release if we aren't on the `master` branch.
+  - Release a release based on conventional commits.
   - Works in monorepo's.
