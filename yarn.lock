@@ -1255,10 +1255,10 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@qiwi/multi-semantic-release@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/multi-semantic-release/-/multi-semantic-release-3.0.2.tgz#20219a061c140729a1a2e6f969c28b1084ede575"
-  integrity sha512-juDDiG7wExHBuRRiSrUIlZTePhGZAq08ovEIwo96aJ2/+NZItvevMLDlT8aa3rxhK/42mHdMd1mlKo+FjmlbDQ==
+"@qiwi/multi-semantic-release@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/multi-semantic-release/-/multi-semantic-release-3.0.3.tgz#ad2143d60d161994921b8ec960e84dc495e9b5c1"
+  integrity sha512-xiIO4hz+XyGMylA3XNexp0YJ1LHbjOiRERBef4vzGnr3Psrgwa6EpLlMigUdIYzcIA0EoW7+AMpaisVzusr7QQ==
   dependencies:
     bash-glob "^2.0.0"
     blork "^9.2.2"
@@ -1269,7 +1269,7 @@
     lodash "^4.17.15"
     meow "^7.0.1"
     promise-events "^0.1.8"
-    semantic-release "^17.0.8"
+    semantic-release "^17.1.1"
     semver "^7.3.2"
     signale "^1.4.0"
     stream-buffers "^3.0.2"
@@ -7941,7 +7941,7 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release@^17.0.8, semantic-release@^17.1.1:
+semantic-release@^17.1.1:
   version "17.1.1"
   resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-17.1.1.tgz#d9775968e841b2b7c5020559e4481aea8520ca75"
   integrity sha512-9H+207eynBJElrQBHySZm+sIEoJeUhPA2zU4cdlY1QSInd2lnE8GRD2ALry9EassE22c9WW+aCREwBhro5AIIg==
