@@ -3390,6 +3390,21 @@ escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
+eslint-config-dv-scripts@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-dv-scripts/-/eslint-config-dv-scripts-1.0.0.tgz#20a453ec3926e65175dc1e84d58ba42b8870eb39"
+  integrity sha512-kZBPIsGC3LIqYT3tRQZTh0MSXFAfxJ9/vaLd44tXa1yyT+J950SstfPitaIUUe7tjR7ynj9QC7lKYoNrdpmXSA==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "2.x"
+    "@typescript-eslint/parser" "2.x"
+    eslint "^6.8.0"
+    eslint-config-react-app "^5.2.1"
+    eslint-plugin-flowtype "4.x"
+    eslint-plugin-import "2.x"
+    eslint-plugin-jsx-a11y "6.x"
+    eslint-plugin-react "7.x"
+    eslint-plugin-react-hooks "2.x"
+
 eslint-config-react-app@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/eslint-config-react-app/-/eslint-config-react-app-5.2.1.tgz#698bf7aeee27f0cea0139eaef261c7bf7dd623df"
@@ -6484,9 +6499,9 @@ npm-profile@^4.0.2, npm-profile@^4.0.4:
     npm-registry-fetch "^4.0.0"
 
 npm-registry-fetch@^4.0.0, npm-registry-fetch@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/npm-registry-fetch/-/npm-registry-fetch-4.0.4.tgz#2da1ecf3f43d419d96abf313664291a4623d3ea5"
-  integrity sha512-6jb34hX/iYNQebqWUHtU8YF6Cjb1H6ouTFPClYsyiW6lpFkljTpdeftm53rRojtja1rKAvKNIIiTS5Sjpw4wsA==
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/npm-registry-fetch/-/npm-registry-fetch-4.0.5.tgz#cb87cf7f25bfb048d6c3ee19d115bebf93ea5bfa"
+  integrity sha512-yQ0/U4fYpCCqmueB2g8sc+89ckQ3eXpmU4+Yi2j5o/r0WkKvE2+Y0tK3DEILAtn2UaQTkjTHxIXe2/CSdit+/Q==
   dependencies:
     JSONStream "^1.3.4"
     bluebird "^3.5.1"
