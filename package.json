@@ -9,6 +9,7 @@
   "scripts": {
     "build": "wsrun --stages build",
     "lint": "wsrun lint",
+    "release": "node --require dotenv/config packages/dv-scripts/bin.js release",
     "start": "wsrun start",
     "test": "cross-env CI=true wsrun test"
   },
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
     "prettier": "^2.0.5",
     "typescript": "^3.9.6",
     "wsrun": "^5.2.1"
