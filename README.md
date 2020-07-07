@@ -19,3 +19,4 @@ Scripts for Node/TypeScript development.
   - Release a canary release if we aren't on the `master` branch.
   - Release a release based on conventional commits.
   - Works in monorepo's.
+  - When in a monorepo we use https://github.com/qiwi/multi-semantic-release.
