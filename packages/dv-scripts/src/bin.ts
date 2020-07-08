@@ -56,5 +56,21 @@ yargs
       })
     },
   )
+  .command(
+    'ci',
+    'Run build, lint, test, release.',
+    (v) => v,
+    async (options) => {
+      await build(getArgs(options))
+      await lint(getArgs(options))
+      await test(getArgs(options))
+      const { GITHUB_TOKEN, NPM_TOKEN } = process.env
+      await release({
+        args: getArgs(options),
+        gitHubToken: GITHUB_TOKEN,
+        npmToken: NPM_TOKEN,
+      })
+    },
+  )
   .demandCommand(1, '')
   .parse()

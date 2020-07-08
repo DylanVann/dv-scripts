@@ -19,23 +19,8 @@ jobs:
         env:
           CI: true
 
-      - name: Build
-        run: yarn build
-        env:
-          CI: true
-
-      - name: Lint
-        run: yarn lint
-        env:
-          CI: true
-
-      - name: Test
-        run: yarn test
-        env:
-          CI: true
-
-      - name: Release
-        run: yarn dv-scripts release
+      - name: CI
+        run: yarn dv-scripts ci
         env:
           CI: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

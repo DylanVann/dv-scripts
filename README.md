@@ -20,3 +20,10 @@ Scripts for Node/TypeScript development.
   - Release a release based on conventional commits.
   - Works in monorepo's.
   - When in a monorepo we use https://github.com/qiwi/multi-semantic-release.
+- `ci`
+  - Single command for running common CI commands.
+    1. `build`
+    2. `lint`
+    3. `test`
+    4. `release`
+  - Instead of setting up a complex YAML file and locking yourself into a CI provider you can use `dv-scripts ci`.
