@@ -1,4 +1,5 @@
 import yargs from 'yargs'
+import execa from 'execa'
 import { build } from './scripts/build'
 import { start } from './scripts/start'
 import { lint } from './scripts/lint'
@@ -54,6 +55,17 @@ yargs
         gitHubToken: GITHUB_TOKEN,
         npmToken: NPM_TOKEN,
       })
+    },
+  )
+  .command(
+    'ci',
+    'Run build, lint, test, release.',
+    (v) => v,
+    async (options) => {
+      await execa('yarn', ['build'])
+      await execa('yarn', ['lint'])
+      await execa('yarn', ['test'])
+      await execa('yarn', ['release'])
     },
   )
   .demandCommand(1, '')
