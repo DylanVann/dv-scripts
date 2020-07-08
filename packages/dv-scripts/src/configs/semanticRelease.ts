@@ -1,16 +1,13 @@
 const config = {
   branch: 'master',
-  verifyConditions: [
+  plugins: [
+    '@semantic-release/commit-analyzer',
+    '@semantic-release/release-notes-generator',
     '@semantic-release/changelog',
     '@semantic-release/npm',
     '@semantic-release/git',
+    '@semantic-release/github',
   ],
-  prepare: [
-    '@semantic-release/changelog',
-    '@semantic-release/npm',
-    '@semantic-release/git',
-  ],
-  publish: ['@semantic-release/npm', '@semantic-release/github'],
 }
 
 module.exports = config
