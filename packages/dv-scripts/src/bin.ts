@@ -1,4 +1,5 @@
 import yargs from 'yargs'
+import execa from 'execa'
 import { build } from './scripts/build'
 import { start } from './scripts/start'
 import { lint } from './scripts/lint'
@@ -61,15 +62,10 @@ yargs
     'Run build, lint, test, release.',
     (v) => v,
     async (options) => {
-      await build(getArgs(options))
-      await lint(getArgs(options))
-      await test(getArgs(options))
-      const { GITHUB_TOKEN, NPM_TOKEN } = process.env
-      await release({
-        args: getArgs(options),
-        gitHubToken: GITHUB_TOKEN,
-        npmToken: NPM_TOKEN,
-      })
+      await execa('yarn', ['build'])
+      await execa('yarn', ['lint'])
+      await execa('yarn', ['test'])
+      await execa('yarn', ['release'])
     },
   )
   .demandCommand(1, '')

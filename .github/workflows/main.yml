@@ -19,6 +19,11 @@ jobs:
         env:
           CI: true
 
+      - name: Build
+        run: yarn build
+        env:
+          CI: true
+
       - name: CI
         run: yarn dv-scripts ci
         env:
