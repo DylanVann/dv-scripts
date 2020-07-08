@@ -62,10 +62,10 @@ yargs
     'Run build, lint, test, release.',
     (v) => v,
     async (options) => {
-      await execa('yarn', ['build'])
-      await execa('yarn', ['lint'])
-      await execa('yarn', ['test'])
-      await execa('yarn', ['release'])
+      await execa('yarn', ['build'], { stdio: 'inherit' })
+      await execa('yarn', ['lint'], { stdio: 'inherit' })
+      await execa('yarn', ['test'], { stdio: 'inherit' })
+      await execa('yarn', ['release'], { stdio: 'inherit' })
     },
   )
   .demandCommand(1, '')
