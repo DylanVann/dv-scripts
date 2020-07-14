@@ -941,6 +941,26 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@dylanvann/multi-semantic-release@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@dylanvann/multi-semantic-release/-/multi-semantic-release-3.2.0.tgz#713f60134453ccd9b1db708e8f21ff119e724cd1"
+  integrity sha512-MxSOlc1p9+bGv1rvdrRoMTWBbH2GScs6mvd6ksQZGlsArGz21++c63oABdkl/ZXxdNqb6gvu/j22NvzYD4iEjg==
+  dependencies:
+    bash-glob "^2.0.0"
+    blork "^9.2.2"
+    cosmiconfig "^6.0.0"
+    execa "^4.0.3"
+    get-stream "^5.1.0"
+    git-log-parser "^1.2.0"
+    lodash "^4.17.19"
+    meow "^7.0.1"
+    promise-events "^0.1.8"
+    semantic-release "^17.1.1"
+    semver "^7.3.2"
+    signale "^1.4.0"
+    stream-buffers "^3.0.2"
+    tempy "^0.5.0"
+
 "@emotion/hash@0.8.0":
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
@@ -1253,26 +1273,6 @@
   integrity sha512-GorvORVwp244fGKEt3cgt/P+M0MGy4xEDbckw+K5ojEezxyMDgCaYPKVct+/eWQfZXOT7uq0xRpmrl/+hliabA==
   dependencies:
     "@types/node" ">= 8"
-
-"@qiwi/multi-semantic-release@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@qiwi/multi-semantic-release/-/multi-semantic-release-3.2.0.tgz#95fb092c9664d406060ff86a450e5ebab90bba3f"
-  integrity sha512-a6/bbYviub1cs5svs8P6DzfrIM3qGQjCETyhBRGNGWFU/6DaOnagTJ4z431ChO7hzajWSaJLwd7Gc/jMuFmvXA==
-  dependencies:
-    bash-glob "^2.0.0"
-    blork "^9.2.2"
-    cosmiconfig "^6.0.0"
-    execa "^4.0.3"
-    get-stream "^5.1.0"
-    git-log-parser "^1.2.0"
-    lodash "^4.17.19"
-    meow "^7.0.1"
-    promise-events "^0.1.8"
-    semantic-release "^17.1.1"
-    semver "^7.3.2"
-    signale "^1.4.0"
-    stream-buffers "^3.0.2"
-    tempy "^0.5.0"
 
 "@rollup/plugin-babel@^5.1.0":
   version "5.1.0"
