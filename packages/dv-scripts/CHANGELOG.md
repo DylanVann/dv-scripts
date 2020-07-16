@@ -1,3 +1,10 @@
+## dv-scripts [1.4.1](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.4.0...dv-scripts@1.4.1) (2020-07-16)
+
+
+### Bug Fixes
+
+* make jest work better ([c03e9ac](https://github.com/dylanvann/dv-scripts/commit/c03e9ac218c5f5c4b6599a3af4d8b71c9e9d75a8))
+
 # dv-scripts [1.4.0](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.3.1...dv-scripts@1.4.0) (2020-07-16)
 
 
