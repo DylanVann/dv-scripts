@@ -57,6 +57,7 @@ const config: RollupOptions = {
   plugins: [
     babel({
       babelrc: false,
+      configFile: false,
       babelHelpers: 'runtime',
       extensions: extensionsWithDot,
       ...babelConfig,
