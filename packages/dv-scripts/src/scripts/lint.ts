@@ -1,14 +1,9 @@
 import execa from 'execa'
 import { extensions } from '../extensions'
-import pkgDir from 'pkg-dir'
-import path from 'path'
+import { readPkgUp } from '../utils'
 
 export const lint = async (args: string[]) => {
-  const root = pkgDir.sync() as string
-
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const pkg = require(path.join(root, 'package.json'))
-
+  const pkg = await readPkgUp()
   const fix = args.includes('--fix')
 
   const sortPackageJson = async (fix: boolean) => {
@@ -66,13 +61,19 @@ export const lint = async (args: string[]) => {
 
   // Prettier
   try {
-    const inputGlob = `src/**/*.{${extensions.join(',')}}`
+    const inputGlobArgs = `src/**/*.{${extensions.join(',')}}`
     const fixArgs = fix ? ['--write'] : ['--check']
-    const config = ['--config', require.resolve('../configs/prettier.js')]
-    await execa('prettier', [...ignoreArgs, inputGlob, ...config, ...fixArgs], {
-      preferLocal: true,
-      stdio: 'inherit',
-    })
+    const prettierArgs = pkg.prettier
+      ? []
+      : ['--config', require.resolve('../configs/prettier.js')]
+    await execa(
+      'prettier',
+      [...ignoreArgs, inputGlobArgs, ...prettierArgs, ...fixArgs],
+      {
+        preferLocal: true,
+        stdio: 'inherit',
+      },
+    )
   } catch (e) {
     console.log('You can run "yarn lint --fix" to resolve this.')
     process.exit(1)

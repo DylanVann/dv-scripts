@@ -56,6 +56,7 @@
     "jest": "24.9.0",
     "pkg-dir": "^4.1.0",
     "prettier": "^2.0.5",
+    "read-pkg-up": "^7.0.1",
     "rollup": "^2.20.0",
     "semantic-release": "^17.1.1",
     "sort-package-json": "^1.44.0",
