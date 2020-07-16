@@ -1,3 +1,10 @@
+# dv-scripts [1.4.0](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.3.1...dv-scripts@1.4.0) (2020-07-16)
+
+
+### Features
+
+* allow jest config in package.json ([f1a2858](https://github.com/dylanvann/dv-scripts/commit/f1a28582b7a467ab243213cb227244b400769b47))
+
 ## dv-scripts [1.3.1](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.3.0...dv-scripts@1.3.1) (2020-07-16)
 
 
