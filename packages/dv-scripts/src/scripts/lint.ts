@@ -20,7 +20,7 @@ export const lint = async (args: string[]) => {
 
   const extensionArgs = extensions.flatMap((e) => ['--ext', e])
 
-  const configArgs = pkg.eslintConfig
+  const configArgs = pkg.packageJson.eslintConfig
     ? []
     : ['--config', require.resolve('eslint-config-dv-scripts')]
 
@@ -63,7 +63,7 @@ export const lint = async (args: string[]) => {
   try {
     const inputGlobArgs = `src/**/*.{${extensions.join(',')}}`
     const fixArgs = fix ? ['--write'] : ['--check']
-    const prettierArgs = pkg.prettier
+    const prettierArgs = pkg.packageJson.prettier
       ? []
       : ['--config', require.resolve('../configs/prettier.js')]
     await execa(
