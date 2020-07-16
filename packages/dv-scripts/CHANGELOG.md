@@ -1,3 +1,10 @@
+## dv-scripts [1.3.1](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.3.0...dv-scripts@1.3.1) (2020-07-16)
+
+
+### Bug Fixes
+
+* fix usage of find-pkg-up ([c6ad77c](https://github.com/dylanvann/dv-scripts/commit/c6ad77c2981427f60b6040414679057142e0a786))
+
 # dv-scripts [1.3.0](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.2.5...dv-scripts@1.3.0) (2020-07-16)
 
 
