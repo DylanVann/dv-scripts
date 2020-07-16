@@ -1,3 +1,13 @@
+## dv-scripts [1.2.5](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.2.4...dv-scripts@1.2.5) (2020-07-16)
+
+
+
+
+
+### Dependencies
+
+* **eslint-config-dv-scripts:** upgraded to 1.1.1
+
 ## dv-scripts [1.2.4](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.2.3...dv-scripts@1.2.4) (2020-07-14)
 
 
