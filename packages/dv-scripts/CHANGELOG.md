@@ -1,3 +1,10 @@
+## dv-scripts [1.4.2](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.4.1...dv-scripts@1.4.2) (2020-07-16)
+
+
+### Bug Fixes
+
+* don't use babel config files with Rollup ([696ad13](https://github.com/dylanvann/dv-scripts/commit/696ad139f1c3c7ec4ff9f80149a8fa055cc6e3b9))
+
 ## dv-scripts [1.4.1](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.4.0...dv-scripts@1.4.1) (2020-07-16)
 
 
