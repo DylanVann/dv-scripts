@@ -1,3 +1,10 @@
+# dv-scripts [1.5.0](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.4.2...dv-scripts@1.5.0) (2021-07-13)
+
+
+### Features
+
+* upgrade jest ([18d6be2](https://github.com/dylanvann/dv-scripts/commit/18d6be2b8ed24d19fb31c595784d48888927eac0))
+
 ## dv-scripts [1.4.2](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.4.1...dv-scripts@1.4.2) (2020-07-16)
 
 
