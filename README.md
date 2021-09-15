@@ -16,8 +16,8 @@ Scripts for Node/TypeScript development.
   - Compile individual files in watch mode using Babel.
   - We do this so that when developing in a monorepo you get proper hot module reloading.
 - `release`
-  - Release a production release if we are on the `master` branch.
-  - Release a canary release if we aren't on the `master` branch.
+  - Release a production release if we are on the `main` branch.
+  - Release a canary release if we aren't on the `main` branch.
   - When in a normal repo we use [semantic-release](https://github.com/semantic-release/semantic-release).
   - When in a repo using Yarn workspaces we use [multi-semantic-release](https://github.com/DylanVann/multi-semantic-release).
 - `ci`
