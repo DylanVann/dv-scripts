@@ -1,3 +1,10 @@
+## dv-scripts [1.5.1](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.5.0...dv-scripts@1.5.1) (2021-09-15)
+
+
+### Bug Fixes
+
+* update babel ([c02a4b6](https://github.com/dylanvann/dv-scripts/commit/c02a4b682bcfc2fc910e7593442cfcf240d2ee72))
+
 # dv-scripts [1.5.0](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.4.2...dv-scripts@1.5.0) (2021-07-13)
 
 
