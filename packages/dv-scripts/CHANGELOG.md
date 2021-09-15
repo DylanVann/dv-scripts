@@ -1,3 +1,10 @@
+## dv-scripts [1.6.1](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.6.0...dv-scripts@1.6.1) (2021-09-15)
+
+
+### Bug Fixes
+
+* update prettier ([0fd957f](https://github.com/dylanvann/dv-scripts/commit/0fd957fcbe27c9cf6481e3e693743f898132f17e))
+
 # dv-scripts [1.6.0](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.5.2...dv-scripts@1.6.0) (2021-09-15)
 
 
