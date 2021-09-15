@@ -1,3 +1,15 @@
+# dv-scripts [1.6.0](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.5.2...dv-scripts@1.6.0) (2021-09-15)
+
+
+### Bug Fixes
+
+* use branches in config ([c1bd27b](https://github.com/dylanvann/dv-scripts/commit/c1bd27b044101fa9cdec458b27331f57614ed14f))
+
+
+### Features
+
+* upgrade TypeScript ([fe9a286](https://github.com/dylanvann/dv-scripts/commit/fe9a286986610a6ef0b42a2c6e4b764188c798cb))
+
 ## dv-scripts [1.5.2](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.5.1...dv-scripts@1.5.2) (2021-09-15)
 
 
