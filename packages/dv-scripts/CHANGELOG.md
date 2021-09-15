@@ -1,3 +1,10 @@
+## dv-scripts [1.5.2](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.5.1...dv-scripts@1.5.2) (2021-09-15)
+
+
+### Bug Fixes
+
+* update semantic release packages ([8afb78b](https://github.com/dylanvann/dv-scripts/commit/8afb78b1b41988c9f3d7774da86726d098d1d6a5))
+
 ## dv-scripts [1.5.1](https://github.com/dylanvann/dv-scripts/compare/dv-scripts@1.5.0...dv-scripts@1.5.1) (2021-09-15)
 
 
