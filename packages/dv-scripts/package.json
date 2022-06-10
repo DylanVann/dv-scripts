@@ -59,7 +59,7 @@
     "prettier": "^2.4.0",
     "read-pkg-up": "^7.0.1",
     "rollup": "^2.20.0",
-    "semantic-release": "^17.4.7",
+    "semantic-release": "^19.0.3",
     "sort-package-json": "^1.44.0",
     "tslib": "^2.3.1"
   },
